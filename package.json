@@ -1,0 +1,11 @@
+{
+  "name": "flux-todos",
+  "version": "1.0.0",
+  "description": "My todo application sample to study React.js and flux",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "danimal141",
+  "license": "ISC"
+}
