@@ -4,7 +4,7 @@ import todoActions from '../actions/TodoActions';
 import TodoTextInput from './TodoTextInput';
 
 export default class Header extends React.Component {
-   /**
+  /**
    * @return {object}
    */
   render() {
