@@ -1,11 +1,22 @@
 {
   "name": "flux-todos",
   "version": "1.0.0",
-  "description": "My todo application sample to study React.js and flux",
-  "main": "index.js",
+  "description": "My todo application sample using React.js and flux architecture",
+  "main": "js/app.js",
   "scripts": {
+    "start": "gulp default",
+    "build": "gulp build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "danimal141",
-  "license": "ISC"
+  "license": "MIT",
+  "devDependencies": {
+    "babelify": "^6.4.0",
+    "browserify": "^12.0.1",
+    "gulp": "^3.9.0",
+    "gulp-webserver": "^0.9.1",
+    "react": "^0.14.2",
+    "todomvc-app-css": "^2.0.3",
+    "vinyl-source-stream": "^1.1.0"
+  }
 }
