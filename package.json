@@ -13,10 +13,14 @@
   "devDependencies": {
     "babelify": "^6.4.0",
     "browserify": "^12.0.1",
+    "classnames": "^2.2.0",
+    "events": "^1.1.0",
+    "flux": "^2.1.1",
     "gulp": "^3.9.0",
     "gulp-webserver": "^0.9.1",
+    "keymirror": "^0.1.1",
     "react": "^0.14.2",
-    "todomvc-app-css": "^2.0.3",
+    "react-dom": "^0.14.2",
     "vinyl-source-stream": "^1.1.0"
   }
 }
