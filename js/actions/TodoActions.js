@@ -1,7 +1,7 @@
 import appDispatcher from '../dispatcher/AppDispatcher';
 import todoConstants from '../constants/TodoConstants';
 
-export default {
+const todoActions = {
    /**
    * @param  {string} text
    */
@@ -68,3 +68,5 @@ export default {
     });
   }
 }
+
+export default todoActions;
