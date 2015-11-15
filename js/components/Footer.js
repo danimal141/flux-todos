@@ -37,16 +37,16 @@ export default class Footer extends React.Component {
 
     return completed;
   }
-  _generateClearCompleteButton(completed) {
+  _generateClearCompleteButton(count) {
     // Undefined and thus not rendered if no completed items are left.
-    if (!completed) { return null; }
+    if (!count) { return null; }
 
     return (
       <button
         id='clear-completed'
         onClick={this._onClearCompletedClick}
       >
-        Clear completed ({completed})
+        Clear completed ({count})
       </button>
     );
   }

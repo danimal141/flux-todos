@@ -107,7 +107,7 @@ class TodoStore extends EventEmitter {
       case todoConstants.TODO_CREATE:
         text = action.text.trim();
 
-        if (text == '') { return }
+        if (text === '') { return }
         create(text);
         this.emitChange();
         break;
@@ -134,7 +134,7 @@ class TodoStore extends EventEmitter {
       case todoConstants.TODO_UPDATE_TEXT:
         text = action.text.trim();
 
-        if (text == '') { return }
+        if (text === '') { return }
         update(action.id, {text: text});
         this.emitChange();
         break;

@@ -7,7 +7,7 @@ export default class MainSection extends React.Component {
   render() {
     if (!this._hasTodos()) { return null; }
 
-    let todos = this._getAllTodos();
+    let todos = this._getTodos();
     return (
       <section id='main'>
         <input
@@ -17,7 +17,9 @@ export default class MainSection extends React.Component {
           checked={this.props.areAllComplete ? 'checked' : ''}
         />
         <label htmlFor='toggle-all'>Mark all as complete</label>
-        <ul id='todo-list'>{todos}</ul>
+        <ul id='todo-list'>
+          {todos}
+        </ul>
       </section>
     );
   }
@@ -25,7 +27,7 @@ export default class MainSection extends React.Component {
   _hasTodos() {
     return Object.keys(this.props.allTodos).length > 0;
   }
-  _getAllTodos() {
+  _getTodos() {
     let todos = [];
     let allTodos = this.props.allTodos;
 

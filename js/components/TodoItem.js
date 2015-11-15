@@ -18,16 +18,7 @@ export default class TodoItem extends React.Component {
    */
   render() {
     let todo = this.props.todo;
-    let input;
-
-    if (this.state.isEditing) {
-      input =
-        <TodoTextInput
-          className='edit'
-          onSave={this._onSave.bind(this)}
-          value={todo.text}
-        />;
-    }
+    let input = this._generateTextInput(todo);
 
     // List items should get the class 'editing' when editing
     // and 'completed' when marked as completed.
@@ -53,6 +44,18 @@ export default class TodoItem extends React.Component {
         </div>
         {input}
       </li>
+    );
+  }
+
+  _generateTextInput(todo) {
+    if (!this.state.isEditing) { return null; }
+
+    return (
+      <TodoTextInput
+        className='edit'
+        onSave={this._onSave.bind(this)}
+        value={todo.text}
+      />
     );
   }
 

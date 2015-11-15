@@ -1,7 +1,11 @@
+// If using Facebook's flux,
+// execute 'npm install --save-dev flux' and refer below
+
 //import { Dispatcher } from 'flux';
-//
+
 //const appDispatcher = new Dispatcher()
 //export default appDispatcher;
+
 
 let _callbacks = [];
 let _promises = [];

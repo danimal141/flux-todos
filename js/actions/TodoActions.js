@@ -2,7 +2,7 @@ import appDispatcher from '../dispatcher/AppDispatcher';
 import todoConstants from '../constants/TodoConstants';
 
 const todoActions = {
-   /**
+  /**
    * @param  {string} text
    */
   create: (text) => {
@@ -59,7 +59,7 @@ const todoActions = {
     });
   },
 
-   /**
+  /**
    * Delete all the completed ToDos
    */
   destroyCompleted: () => {
